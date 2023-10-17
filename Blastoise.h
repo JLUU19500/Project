@@ -6,15 +6,17 @@
 
 class Blastoise : public Player {
 private:
-  std::string weapon;
+  std::string weapon; // The weapon of the Blastoise
 
 public:
-  Blastoise(std::string name, int health, int damage, std::string weapon);
-  std::string getWeapon() const;
-  void setWeapon(std::string newWeapon);
-  void swingWeapon(Player *opponent);
-  void newAttack(Player *opponent);
-  void displayStats();
+  Blastoise(std::string name, int health, int damage,
+            std::string weapon);         // Constructor for Blastoise
+  std::string getWeapon() const;         // Getter for the weapon
+  void setWeapon(std::string newWeapon); // Setter for the weapon
+  void swingWeapon(Player *opponent);    // Method for swinging the weapon and
+                                         // attacking the opponent
+  void newAttack(Player *opponent);      // Method for a new attack
+  void displayStats(); // Method for displaying the stats of the Blastoise
 };
 
 #endif
